@@ -1,0 +1,28 @@
+<mat-card style="height: 3em;color: white;background-color: rgba(255,255,255,.3);background-image: url('../assets/images/backgrounds/M81_U.S._woodland_camouflage_pattern_swatch.png');">
+  <app-brand></app-brand>
+  <app-social-icons></app-social-icons>
+  <div class="web" style="margin-top: .5em;margin-left: 0em;" fxLayout="row" fxShow="false" fxShow.gt-sm>
+    <button mat-button routerLink="/landing" routerLinkActive="active"><i class="zmdi zmdi-home"></i>Home </button>
+    <button mat-button routerLink="/gear" routerLinkActive="active"><i class="zmdi zmdi-compass"></i>Gear </button>
+    <button mat-button routerLink="/about" routerLinkActive="active"><i class="zmdi zmdi-info"></i>Who We Are</button>
+    <button mat-button routerLink="/contact" routerLinkActive="active"><i class="zmdi zmdi-email"></i>Contact Us</button>
+  </div>
+
+  <button class="mobile pancake" mat-raised-button [mat-menu-trigger-for]="rootMenu" fxHide="false" fxHide.gt-sm>
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <mat-menu x-position="before" #rootMenu="matMenu" >
+    <button mat-menu-item routerLink="/landing" routerLinkActive="active">Home </button>
+    <button mat-menu-item [matMenuTriggerFor]="subMenu" routerLink="gear" routerLinkActive="active">Projects </button>
+    <button mat-menu-item routerLink="/about" routerLinkActive="about">About </button>
+    <button mat-menu-item routerLink="/contact" routerLinkActive="contact">Contact </button>
+  </mat-menu>
+
+  <mat-menu #subMenu="matMenu">
+    <button mat-menu-item>T-Shirts</button>
+  </mat-menu>
+
+</mat-card>
+
+

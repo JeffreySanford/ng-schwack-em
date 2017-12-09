@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ng-schwack-em-arament App', () => {
+describe('ng-schwack-em-armament App', () => {
   let page: AppPage;
 
   beforeEach(() => {

@@ -1,0 +1,54 @@
+.item {
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+}
+
+.item:hover{
+  border: 1px solid red;
+}
+
+.item-container {
+  margin-left: .5em;
+  margin-top: -2em;
+}
+
+.item-title {
+  color: black;
+  font-size: 1.25em;
+}
+
+.description {
+  margin: .5em auto;
+  font-size: .8em;
+  color: maroon;
+}
+
+.price {
+  color: black;
+  font-size: 1.2em;
+}
+.mat-grid-list {
+  width: 90%;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+.mobile {
+  display:none;
+}
+.web {
+  display: inline-flex;
+}
+@media(max-width:500px) {
+  .mobile {
+    display: block;
+  }
+  .web {
+    display: none;
+  }
+}
+

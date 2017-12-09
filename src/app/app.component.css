@@ -1,0 +1,8 @@
+
+.mat-card {
+  color: white;
+  background-color: rgba(0,128,0,.9);
+  margin-top: 2em;
+  width: 90%;
+  margin: 2em auto;
+}

@@ -1,0 +1,21 @@
+<h2 style="color: black;">featured items</h2>
+<mat-grid-list class="web" cols="3" rowHeight="10em" gutterSize="1em">
+  <mat-grid-tile routerLink="/item" routerLinkActive="active" class="item" *ngFor="let shirt of products">
+      <mat-grid-list cols="2">
+        <mat-grid-tile>
+          <img style="width: 10em;" src="{{ shirt.image }}" alt="">
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="item-container">
+            <p class="item-title">{{ shirt.title }}</p>
+            <p class="description">{{ shirt.description }}</p>
+            <p class="price">{{ shirt.price | currency: 'USD' }}</p>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+  </mat-grid-tile>
+  <div class="mobile">
+    <mat-card class="item" *ngFor="let shirt of products">
+      <img style="width: 10em;" src="{{ shirt.image }}" alt="">
+    </mat-card>
+  </div>

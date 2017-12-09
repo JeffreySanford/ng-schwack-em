@@ -1,0 +1,32 @@
+i {
+  margin-right: .5em;
+}
+button {
+  font-size: 1em;
+  background-color: green;
+  width: 9em;
+  margin-right: .5em;
+}
+
+.mobile {
+  display: hidden;
+}
+
+.pancake {
+  width: 1em;
+  top: 1.75em;
+  background-color: green;
+  color:white;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+}
+
+@media (max-width: 500px) {
+  .web {
+    display: none;
+  }
+  .mobile {
+    display: inline-flex;
+  }
+}

@@ -1,31 +1,56 @@
 .item {
   border: 1px solid white;
-  background-color: white;
+  background-color: rgba(0,0,0, .3);
   color: black;
+  height:20em;
+  margin-top: -5em;
+  width: 27%;
+  margin: 0 .5em;
+  height: 10em;
 }
 
 .item:hover{
   border: 1px solid red;
 }
 
+.shirt-image {
+  position: absolute;
+  left: .5em;
+  top: .5em;
+  min-width: 10em;
+  width: 10px;
+}
+
+.shirt-image:hover {
+  min-width: 14em;
+  width: 14em;
+}
+
 .item-container {
-  margin-left: .5em;
-  margin-top: -2em;
+  position: absolute;
+  top: 1.5em;
+  right: .5em;
+  height: 5em;
+  padding: .5em;
+  background-color: rgba(0,0,0, .6);
 }
 
 .item-title {
-  color: black;
+  text-align: right;
+  color: white;
   font-size: 1.25em;
 }
 
 .description {
+  text-align: right;
   margin: .5em auto;
   font-size: .8em;
-  color: maroon;
+  color: white;
 }
 
 .price {
-  color: black;
+  text-align: right;
+  color: white;
   font-size: 1.2em;
 }
 .mat-grid-list {
@@ -42,6 +67,7 @@ p {
 }
 .web {
   display: inline-flex;
+
 }
 @media(max-width:700px) {
   .mobile {
@@ -49,6 +75,14 @@ p {
   }
   .web {
     display: none;
+  }
+
+  .item {
+    width: 90%;
+  }
+  .shirt-image {
+    width: 5em;
+    min-width: 5em;
   }
 }
 

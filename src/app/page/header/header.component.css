@@ -22,7 +22,7 @@ button {
   right: .5em;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .web {
     display: none;
   }

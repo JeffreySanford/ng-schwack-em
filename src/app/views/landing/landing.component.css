@@ -43,7 +43,7 @@ p {
 .web {
   display: inline-flex;
 }
-@media(max-width:500px) {
+@media(max-width:600px) {
   .mobile {
     display: block;
   }

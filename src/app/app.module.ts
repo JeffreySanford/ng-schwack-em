@@ -85,6 +85,7 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     BrowserAnimationsModule,
+    MatCardModule,
     MatGridListModule,
     MatMenuModule,
     MatButtonModule,
@@ -95,6 +96,7 @@ const appRoutes: Routes = [
     MatFormFieldModule
   ],
   exports: [
+    MatCardModule,
     MatGridListModule,
     MatMenuModule,
     MatButtonModule,

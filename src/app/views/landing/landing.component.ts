@@ -13,7 +13,7 @@ products = [
     image: '../../../assets/images/captured-longsleeve.PNG',
     description: 'Long sleve high-quality cotton',
     price: 49.25
-  },{
+  }, {
     title: 'shirt-two',
     image: '../../../assets/images/captured-longsleeve.PNG',
     description: 'Long sleve high-quality cotton',
@@ -28,10 +28,5 @@ products = [
 ];
   constructor() { }
 
-  ngOnInit() {
-
-
-  }
-
-
+  ngOnInit() {}
 }

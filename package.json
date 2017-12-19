@@ -21,12 +21,14 @@
     "@angular/material": "^5.0.1",
     "@angular/platform-browser": "^5.1.1",
     "@angular/platform-browser-dynamic": "^5.1.1",
+    "@angular/platform-server": "^5.1.1",
     "@angular/router": "^5.1.1",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.3",
     "handlebars": "^4.0.11",
     "material-design-iconic-font": "^2.2.0",
-    "rxjs": "^5.5.5"
+    "rxjs": "^5.5.5",
+    "web-animations-js": "^2.3.1"
   },
   "devDependencies": {
     "@angular/cli": "1.5.0",
@@ -48,6 +50,6 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
-    "typescript": "~2.4.2"
+    "typescript": "2.4.2"
   }
 }

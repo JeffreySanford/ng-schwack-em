@@ -11,7 +11,6 @@ import { MatInputModule, MatFormFieldModule } from '@angular/material';
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 
 
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './page/header/header.component';
 import { SocialIconsComponent } from './page/social-icons/social-icons.component';
@@ -28,6 +27,7 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
 import { TrustComponent } from './page/trust/trust.component';
 import { ItemComponent } from './views/gear/item/item.component';
 
+import { map, filter, mergeMap, tap } from 'rxjs/operators'
 
 
 

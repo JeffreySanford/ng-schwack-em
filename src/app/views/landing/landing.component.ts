@@ -10,18 +10,18 @@ export class LandingComponent implements OnInit {
 products = [
   {
     title: 'shirt-one',
-    image: '../../../assets/images/captured-longsleeve.PNG',
+    image: 'assets/images/captured-longsleeve.PNG',
     description: 'Long sleve high-quality cotton',
     price: 49.25
   }, {
     title: 'shirt-two',
-    image: '../../../assets/images/captured-longsleeve.PNG',
+    image: 'assets/images/captured-longsleeve.PNG',
     description: 'Long sleve high-quality cotton',
     price: 49.35
   },
   {
     title: 'shirt-three',
-    image: '../../../assets/images/captured-longsleeve.PNG',
+    image: 'assets/images/captured-longsleeve.PNG',
     description: 'Long sleve high-quality cotton',
     price: 49.55
   }

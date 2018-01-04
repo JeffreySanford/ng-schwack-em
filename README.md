@@ -1,6 +1,35 @@
+
+
 # NgSchwackEmArament
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+
+This is s simple single page application design that displays a set of catagories containing products as the main function.  Standard associate web page complete the web applicaiton.
+
+This is built (currently) on Angular 5 with the Angular/Material2 project.  It supports standard material design standards:
+
+https://material.angular.io/
+
+This project, as a development experiment, does not use the bootstrap framework.  Bootstrap might be included in this project in the futrue, but currently the angular material modules have allowed for enough function.
+
+The object products will breakdown into cataogires into individual products which are routable.
+
+The image should be able to be dynamically created using a API from Printful:
+https://www.printful.com/api
+
+The new mockup generator should be able to handle this:
+https://www.printful.com/docs/generator
+
+This will enabled a submit of text and return of an image of a shirt with the text on it.  The printful API has other consumable resoures for ordering and shipping.
+
+#### Production
+
+I am using pm2 to serve numerous website from imaginecreatethrive.com.
+
+ng build --prod --build-optimizer
+cd dist/
+pm2 start http-server -- -p 4203 (pm2 does monitor for changes)
+
 
 ## Development server
 

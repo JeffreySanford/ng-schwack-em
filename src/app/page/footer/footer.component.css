@@ -1,3 +1,18 @@
+.mat-card {
+  position: fixed;
+  bottom: .5em;
+  width: 95.5%;
+  background-color: #cccccc;
+  opacity: 1;
+  background-image: url('../../../assets/images/backgrounds/M81_U.S._woodland_camouflage_pattern_swatch.png');
+}
+
 p {
-  margin: 0;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app-social-icons {
+  left: .5em;
 }

@@ -10,11 +10,9 @@ import { MatGridListModule, MatGridList, MatGridTile } from '@angular/material';
 import { MatInputModule, MatFormFieldModule } from '@angular/material';
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './page/header/header.component';
 import { SocialIconsComponent } from './page/social-icons/social-icons.component';
-import { JumbotronComponent } from './views/landing/jumbotron/jumbotron.component';
 import { BrandComponent } from './page/header/brand/brand.component';
 import { CopyComponent } from './page/footer/copy/copy.component';
 import { FooterComponent } from './page/footer/footer.component';
@@ -27,19 +25,9 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
 import { TrustComponent } from './page/trust/trust.component';
 import { ItemComponent } from './views/gear/item/item.component';
 
-import { map, filter, mergeMap, tap } from 'rxjs/operators'
+import { map, filter, mergeMap, tap } from 'rxjs/operators';
+import { AppRoutingModule } from './app-routing.module'
 
-
-
-const appRoutes: Routes = [
-  { path: 'landing', component: LandingComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'gear', component: GearComponent },
-  { path: 'item', component: ItemComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: '', redirectTo: '/landing', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent }
-];
 
 @NgModule({
   declarations: [
@@ -47,7 +35,6 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     SocialIconsComponent,
-    JumbotronComponent,
     GearComponent,
     AboutComponent,
     ContactComponent,
@@ -59,10 +46,6 @@ const appRoutes: Routes = [
     ItemComponent
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: false } // <-- boolean: true (debugging purposes only)
-    ),
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
@@ -73,7 +56,8 @@ const appRoutes: Routes = [
     MatCardModule,
     MatProgressSpinnerModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    AppRoutingModule
   ],
   exports: [
     MatCardModule,

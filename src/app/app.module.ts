@@ -32,33 +32,13 @@ import { map, filter, mergeMap, tap } from 'rxjs/operators'
 
 
 const appRoutes: Routes = [
-  {
-    path: 'landing',
-    component: LandingComponent,
-  },
-  {
-    path: 'about',
-    component: AboutComponent,
-  },
-  {
-    path: 'gear',
-    component: GearComponent,
-  },
-  {
-    path: 'item',
-    component: ItemComponent,
-  },
-  {
-    path: 'contact',
-    component: ContactComponent,
-  },
-  { path: '',
-  redirectTo: '/landing',
-  pathMatch: 'full'
-},
-{ path: '**', component: PageNotFoundComponent }
-
-
+  { path: 'landing', component: LandingComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'gear', component: GearComponent },
+  { path: 'item', component: ItemComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: '', redirectTo: '/landing', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -81,7 +61,7 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: false } // <-- boolean: true (debugging purposes only)
     ),
     BrowserModule,
     BrowserAnimationsModule,
